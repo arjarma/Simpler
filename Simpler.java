@@ -37,6 +37,9 @@ Simpler()
 String message=JOptionPane.showInputDialog(null);
 ta=new JTextArea();
 ta.setEditable(true);
+ta.append("//package --- \n\n");
+ta.append("import static java.lang.System.out; \n");
+ta.append("//import java.io.*; \n\n");
 ta.append("public class "+message+"\n"+"{// Class Open \n\n");
 ta.append("public static void main(String arg[]) \n");
 ta.append("\t { //main open\n //write code here \n\n\n");
@@ -154,7 +157,9 @@ ta.setText("");
 	{
 		ta.setText("");
 String s=JOptionPane.showInputDialog(null);
-
+ta.append("//package --- \n\n");
+ta.append("import static java.lang.System.out; \n");
+ta.append("//import java.io.*; \n\n");
 ta.append("public class "+s+"\n"+"{// Class Open \n\n");
 ta.append("public static void main(String arg[]) \n");
 ta.append("\t { //main open\n //write code here \n\n\n");
